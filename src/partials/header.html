@@ -9,7 +9,7 @@
         </svg>
         <h1 class="logo-text">Bookshelf</h1>
       </a>
-      <ul class="home-nav">
+      <ul class="home-nav ">
         <li class="nav-item">
           <button type="button" class="nav-btn" data-page="home-list">home</button>
         </li>
@@ -35,9 +35,17 @@
       </div>
      
 
-      <button class="menu-btn js-open-menu">
+      <button class="menu-btn js-open-menu js-mobile-menu-toggle">
         <svg width="28px" height="28px"></svg>
       </button>
+      <!-- ---------------------------- -->
+      <button type="button" class="mob-menu-close-btn js-close-menu js-mobile-menu-close">
+        <svg class="" width="19" height="19">
+          <use href="/src/images/sprite.svg#icon-cross-btn"></use>
+        </svg>
+      </button>
+            <!-- ---------------------------- -->
+
     </div>
   </div>
   <include src="./partials/burger-menu.html"></include>

@@ -17,5 +17,18 @@ pageHome.addEventListener("click", activePageHome);
             pageHome.classList.remove('active');
             console.log('hi')
                 return;
-        }
+}
+        // -----------------------------add
+document.addEventListener('DOMContentLoaded', function() {
+  var mobileMenuToggle = document.querySelector('.js-mobile-menu-toggle');
+  var mobileMenuClose = document.querySelector('.js-mobile-menu-close');
+
+  mobileMenuToggle.addEventListener('click', function() {
+    mobileMenuClose.classList.toggle('show');
+  });
+
+  mobileMenuClose.addEventListener('click', function() {
+    mobileMenuClose.classList.remove('show');
+  });
+});
   
